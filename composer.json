@@ -68,7 +68,7 @@
     }
   },
   "require": {
-      "sparksinteractive/sector-distribution": "~8.0",
+      "sparksinteractive/sector-distribution": "dev-master",
       "composer/installers": "^1.2",  
       "oomphinc/composer-installers-extender": "^1.1",
       "drupal-composer/drupal-scaffold": "^2.2",
