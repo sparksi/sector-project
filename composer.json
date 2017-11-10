@@ -18,6 +18,43 @@
         {
             "type": "composer",
             "url": "https://asset-packagist.org"
+        },
+        {
+            "type": "package",
+            "package": {
+                 "name": "mmenu/main",
+                 "version": "4.7.5",
+                 "type": "drupal-library",
+                 "dist": {
+                     "url": "https://github.com/FrDH/jQuery.mmenu/archive/v4.7.5.zip",
+                     "type": "zip"
+                 }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "mmenu/hammer",
+                "version": "2.0.8",
+                "type": "drupal-library",
+                "source": {
+                    "type": "git",
+                    "reference": "origin/master"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "mmenu/jquery.hammer",
+                "version": "2.0.0",
+                "type": "drupal-library",
+                "source": {
+                    "url": "https://github.com/hammerjs/jquery.hammer.js.git",
+                    "type": "git",
+                    "reference": "origin/master"
+                }
+            }
         }
     ],
     "require": {
@@ -26,7 +63,10 @@
       "oomphinc/composer-installers-extender": "^1.1",
       "drupal-composer/drupal-scaffold": "^2.2",
       "cweagans/composer-patches": "~1.0",
-      "drupal/console": "~1.0"
+      "drupal/console": "~1.0",
+      "mmenu/main": "4.7.5",
+      "mmenu/hammer": "2.0.8",
+      "mmenu/jquery.hammer": "2.0.0"
     },
     "require-dev": {
       "drush/drush": "9.0.0-beta7"
