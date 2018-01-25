@@ -10,76 +10,76 @@
             "role": "Development"
         }
     ],
-  "repositories": {
-    "packagist.drupal": {
-      "type": "composer",
-      "url": "https://packages.drupal.org/8"
-    },
-    "asset.packagist": {
-      "type": "composer",
-      "url": "https://asset-packagist.org"
-    },
-    "mmenu/main": {
-      "extra": {
-        "installer-name": "main"
-      },
-      "type": "package",
-      "package": {
-        "name": "mmenu/main",
-        "version": "4.7.5",
-        "type": "drupal-library",
-        "dist": {
-          "url": "https://github.com/FrDH/jQuery.mmenu/archive/v4.7.5.zip",
-          "type": "zip"
+    "repositories": {
+        "packagist.drupal": {
+            "type": "composer",
+            "url": "https://packages.drupal.org/8"
+        },
+        "asset.packagist": {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        },
+        "mmenu/main": {
+            "extra": {
+                "installer-name": "main"
+            },
+            "type": "package",
+            "package": {
+                "name": "mmenu/main",
+                "version": "4.7.5",
+                "type": "drupal-library",
+                "dist": {
+                    "url": "https://github.com/FrDH/jQuery.mmenu/archive/v4.7.5.zip",
+                    "type": "zip"
+                }
+            }
+        },
+        "mmenu/hammer": {
+            "extra": {
+                "installer-name": "hammer"
+            },
+            "type": "package",
+            "package": {
+                "name": "mmenu/hammer",
+                "version": "2.0.8",
+                "type": "drupal-library",
+                "source": {
+                    "url": "https://github.com/hammerjs/hammer.js.git",
+                    "type": "git",
+                    "reference": "origin/master"
+                }
+            }
+        },
+        "mmenu/jquery.hammer": {
+            "extra": {
+                "installer-name": "jquery.hammer"
+            },
+            "type": "package",
+            "package": {
+                "name": "mmenu/jquery.hammer",
+                "version": "2.0.0",
+                "type": "drupal-library",
+                "source": {
+                    "url": "https://github.com/hammerjs/jquery.hammer.js.git",
+                    "type": "git",
+                    "reference": "origin/master"
+                }
+            }
         }
-      }
     },
-    "mmenu/hammer": {
-      "extra": {
-        "installer-name": "hammer"
-      },
-      "type": "package",
-      "package": {
-        "name": "mmenu/hammer",
-        "version": "2.0.8",
-        "type": "drupal-library",
-        "source": {
-          "url": "https://github.com/hammerjs/hammer.js.git",
-          "type": "git",
-          "reference": "origin/master"
-        }
-      }
-    },
-    "mmenu/jquery.hammer": {
-      "extra": {
-        "installer-name": "jquery.hammer"
-      },
-      "type": "package",
-      "package": {
-        "name": "mmenu/jquery.hammer",
-        "version": "2.0.0",
-        "type": "drupal-library",
-        "source": {
-          "url": "https://github.com/hammerjs/jquery.hammer.js.git",
-          "type": "git",
-          "reference": "origin/master"
-        }
-      }
-    }
-  },
-  "require": {
-      "sparksinteractive/sector-distribution": "dev-master",
-      "composer/installers": "^1.2",  
-      "oomphinc/composer-installers-extender": "^1.1",
-      "drupal-composer/drupal-scaffold": "^2.2",
-      "cweagans/composer-patches": "~1.0",
-      "drupal/console": "~1.0",
-      "mmenu/main": "4.7.5",
-      "mmenu/hammer": "2.0.8",
-      "mmenu/jquery.hammer": "2.0.0"
+    "require": {
+        "sparksinteractive/sector-distribution": "dev-master",
+        "composer/installers": "^1.2",
+        "oomphinc/composer-installers-extender": "^1.1",
+        "drupal-composer/drupal-scaffold": "^2.2",
+        "cweagans/composer-patches": "~1.0",
+        "drupal/console": "~1.0",
+        "mmenu/main": "4.7.5",
+        "mmenu/hammer": "2.0.8",
+        "mmenu/jquery.hammer": "2.0.0"
     },
     "require-dev": {
-      "drush/drush": "9.0.0-beta7"
+        "drush/drush": "9.0.0-beta7"
     },
     "conflict": {
     },
@@ -91,33 +91,33 @@
         ]
     },
     "scripts": {
-    "drupal-scaffold": "DrupalComposer\\DrupalScaffold\\Plugin::scaffold",
-    "pre-install-cmd": [
-      "Sector\\composer\\ScriptHandler::checkComposerVersion"
-    ],
-    "pre-update-cmd": [
-      "Sector\\composer\\ScriptHandler::checkComposerVersion"
-    ],
-    "post-install-cmd": [
-      "Sector\\composer\\ScriptHandler::createRequiredFiles"
-    ],
-    "post-update-cmd": [
-      "Sector\\composer\\ScriptHandler::createRequiredFiles"
-    ]
-  },
-    "extra": {
-      "installer-paths": {
-        "web/core": ["type:drupal-core"],
-        "web/libraries/{$name}": [
-          "type:drupal-library"
+        "drupal-scaffold": "DrupalComposer\\DrupalScaffold\\Plugin::scaffold",
+        "pre-install-cmd": [
+            "Sector\\composer\\ScriptHandler::checkComposerVersion"
         ],
-        "web/modules/contrib/{$name}": ["type:drupal-module"],
-        "web/profiles/contrib/{$name}": ["type:drupal-profile"],
-        "web/themes/contrib/{$name}": ["type:drupal-theme"],
-        "drush/contrib/{$name}": ["type:drupal-drush"]
-      },
-      "enable-patching" : true,
-      "patches": {
+        "pre-update-cmd": [
+            "Sector\\composer\\ScriptHandler::checkComposerVersion"
+        ],
+        "post-install-cmd": [
+            "Sector\\composer\\ScriptHandler::createRequiredFiles"
+        ],
+        "post-update-cmd": [
+            "Sector\\composer\\ScriptHandler::createRequiredFiles"
+        ]
+    },
+    "extra": {
+        "installer-paths": {
+            "web/core": ["type:drupal-core"],
+            "web/libraries/{$name}": [
+                "type:drupal-library"
+            ],
+            "web/modules/contrib/{$name}": ["type:drupal-module"],
+            "web/profiles/contrib/{$name}": ["type:drupal-profile"],
+            "web/themes/contrib/{$name}": ["type:drupal-theme"],
+            "drush/contrib/{$name}": ["type:drupal-drush"]
+        },
+        "enable-patching" : true,
+        "patches": {
         }
     }
 }
