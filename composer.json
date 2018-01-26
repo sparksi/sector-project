@@ -21,20 +21,17 @@
         }
     },
     "require": {
-        "sparksinteractive/sector-distribution": "dev-master",
         "composer/installers": "^1.2",
-        "oomphinc/composer-installers-extender": "^1.1",
-        "drupal-composer/drupal-scaffold": "^2.2",
         "cweagans/composer-patches": "~1.0",
-        "drupal/console": "~1.0",
-        "mmenu/main": "4.7.5",
-        "mmenu/hammer": "2.0.8",
-        "mmenu/jquery.hammer": "2.0.0"
+        "drupal-composer/drupal-scaffold": "^2.2",
+        "drupal/console": "^1.0",
+        "drush/drush": "^8.0",
+        "oomphinc/composer-installers-extender": "^1.1",
+        "sparksinteractive/sector-distribution": "dev-master"
     },
-    "require-dev": {
-        "drush/drush": "9.0.0-beta7"
-    },
-    "conflict": {
+    "config": {
+        "bin-dir": "bin/",
+        "sort-packages": true
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
