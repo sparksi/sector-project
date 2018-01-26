@@ -57,17 +57,25 @@
     },
     "extra": {
         "installer-paths": {
-            "web/core": ["type:drupal-core"],
+            "web/core": [
+                "type:drupal-core"
+            ],
             "web/libraries/{$name}": [
                 "type:drupal-library"
             ],
-            "web/modules/contrib/{$name}": ["type:drupal-module"],
-            "web/profiles/contrib/{$name}": ["type:drupal-profile"],
-            "web/themes/contrib/{$name}": ["type:drupal-theme"],
-            "drush/contrib/{$name}": ["type:drupal-drush"]
+            "web/modules/contrib/{$name}": [
+                "type:drupal-module"
+            ],
+            "web/profiles/contrib/{$name}": [
+                "type:drupal-profile"
+            ],
+            "web/themes/contrib/{$name}": [
+                "type:drupal-theme"
+            ],
+            "drush/contrib/{$name}": [
+                "type:drupal-drush"
+            ]
         },
-        "enable-patching" : true,
-        "patches": {
-        }
+        "enable-patching" : true
     }
 }
