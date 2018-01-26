@@ -18,53 +18,6 @@
         "asset.packagist": {
             "type": "composer",
             "url": "https://asset-packagist.org"
-        },
-        "mmenu/main": {
-            "extra": {
-                "installer-name": "main"
-            },
-            "type": "package",
-            "package": {
-                "name": "mmenu/main",
-                "version": "4.7.5",
-                "type": "drupal-library",
-                "dist": {
-                    "url": "https://github.com/FrDH/jQuery.mmenu/archive/v4.7.5.zip",
-                    "type": "zip"
-                }
-            }
-        },
-        "mmenu/hammer": {
-            "extra": {
-                "installer-name": "hammer"
-            },
-            "type": "package",
-            "package": {
-                "name": "mmenu/hammer",
-                "version": "2.0.8",
-                "type": "drupal-library",
-                "source": {
-                    "url": "https://github.com/hammerjs/hammer.js.git",
-                    "type": "git",
-                    "reference": "origin/master"
-                }
-            }
-        },
-        "mmenu/jquery.hammer": {
-            "extra": {
-                "installer-name": "jquery.hammer"
-            },
-            "type": "package",
-            "package": {
-                "name": "mmenu/jquery.hammer",
-                "version": "2.0.0",
-                "type": "drupal-library",
-                "source": {
-                    "url": "https://github.com/hammerjs/jquery.hammer.js.git",
-                    "type": "git",
-                    "reference": "origin/master"
-                }
-            }
         }
     },
     "require": {
