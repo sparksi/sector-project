@@ -1,6 +1,6 @@
 {
     "name": "sparksinteractive/sector-project",
-    "description": "Sparks Interactive: Sector Distribution. Built using drupal-project template.",
+    "description": "A composer-based Drupal project template using Sector.",
     "type": "project",
     "license": "GPL-2.0-or-later",
     "homepage": "https://www.sector.org.nz",
