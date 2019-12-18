@@ -28,7 +28,8 @@
         "drupal/core": "^8.0",
         "drush/drush": "^9.0",
         "oomphinc/composer-installers-extender": "^1.1",
-        "sparksinteractive/sector-distribution": "dev-8.x-2.x"
+        "zaporylie/composer-drupal-optimizations": "^1.0",
+        "sparksinteractive/sector-distribution": "dev-8.x-3.x"
     },
     "config": {
         "bin-dir": "bin/",
