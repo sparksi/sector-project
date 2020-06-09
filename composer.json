@@ -29,7 +29,7 @@
         "drush/drush": "^9.0",
         "oomphinc/composer-installers-extender": "^1.1",
         "zaporylie/composer-drupal-optimizations": "^1.0",
-        "sparksinteractive/sector-distribution": "dev-8.x-4.x"
+        "sparksinteractive/sector-distribution": "5.0.x-dev"
     },
     "config": {
         "bin-dir": "bin/",
