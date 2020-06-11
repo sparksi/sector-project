@@ -18,6 +18,30 @@
         "asset.packagist": {
             "type": "composer",
             "url": "https://asset-packagist.org"
+        },
+	"ckeditor-plugin/link": {
+            "type": "package",
+            "package": {
+                "name": "ckeditor-plugin/link",
+                "version": "4.14.0",
+                "type": "drupal-library",
+                "dist": {
+                    "url": "https://download.ckeditor.com/link/releases/link_4.14.0.zip",
+                    "type": "zip"
+                }
+            }
+        },
+        "ckeditor-plugin/fakeobjects": {
+            "type": "package",
+            "package": {
+                "name": "ckeditor-plugin/fakeobjects",
+                "version": "4.14.0",
+                "type": "drupal-library",
+                "dist": {
+                    "url": "https://download.ckeditor.com/fakeobjects/releases/fakeobjects_4.14.0.zip",
+                    "type": "zip"
+                }
+            }
         }
     },
     "require": {
