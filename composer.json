@@ -18,6 +18,30 @@
         "asset.packagist": {
             "type": "composer",
             "url": "https://asset-packagist.org"
+        },
+	"ckeditor-plugin/link": {
+            "type": "package",
+            "package": {
+                "name": "ckeditor-plugin/link",
+                "version": "4.14.0",
+                "type": "drupal-library",
+                "dist": {
+                    "url": "https://download.ckeditor.com/link/releases/link_4.14.0.zip",
+                    "type": "zip"
+                }
+            }
+        },
+        "ckeditor-plugin/fakeobjects": {
+            "type": "package",
+            "package": {
+                "name": "ckeditor-plugin/fakeobjects",
+                "version": "4.14.0",
+                "type": "drupal-library",
+                "dist": {
+                    "url": "https://download.ckeditor.com/fakeobjects/releases/fakeobjects_4.14.0.zip",
+                    "type": "zip"
+                }
+            }
         }
     },
     "require": {
@@ -29,7 +53,7 @@
         "drush/drush": "^9.0",
         "oomphinc/composer-installers-extender": "^1.1",
         "zaporylie/composer-drupal-optimizations": "^1.0",
-        "sparksinteractive/sector-distribution": "dev-8.x-4.x"
+        "sparksinteractive/sector-distribution": "5.0.x-dev"
     },
     "config": {
         "bin-dir": "bin/",
