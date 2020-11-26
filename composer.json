@@ -51,7 +51,6 @@
         "drupal/core-composer-scaffold": "^8.8",
         "drush/drush": "^9.0",
         "oomphinc/composer-installers-extender": "^2.0",
-        "zaporylie/composer-drupal-optimizations": "^1.0",
         "sparksinteractive/sector-distribution": "5.0.x-dev"
     },
     "config": {
