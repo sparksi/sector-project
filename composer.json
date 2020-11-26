@@ -65,6 +65,18 @@
             "type": "composer",
             "url": "https://asset-packagist.org"
         },
+        "ckeditor-plugin/templates": {
+            "type": "package",
+            "package": {
+                "name": "ckeditor-plugin/templates",
+                "version": "4.14.0",
+                "type": "drupal-library",
+                "dist": {
+                    "url": "https://download.ckeditor.com/templates/releases/templates_4.14.0.zip",
+                    "type": "zip"
+                }
+            }
+        },
         "ckeditor-plugin/link": {
             "type": "package",
             "package": {
