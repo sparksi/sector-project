@@ -1,15 +1,61 @@
 {
     "name": "sparksinteractive/sector-project",
-    "description": "A composer-based Drupal project template using Sector.",
     "type": "project",
-    "license": "GPL-2.0-or-later",
+    "description": "A composer-based Drupal project template using Sector.",
     "homepage": "https://www.sector.org.nz",
+    "license": "GPL-2.0-or-later",
     "authors": [
         {
             "name": "Sparks Interactive",
             "role": "Development"
         }
     ],
+    "require": {
+        "composer/installers": "^1.2",
+        "cweagans/composer-patches": "~1.0",
+        "drupal/core": "^8.0",
+        "drupal/core-composer-scaffold": "^8.8",
+        "drush/drush": "^9.0",
+        "oomphinc/composer-installers-extender": "^2.0",
+        "sparksinteractive/sector-distribution": "5.0.x-dev"
+    },
+    "config": {
+        "bin-dir": "bin/",
+        "sort-packages": true
+    },
+    "extra": {
+        "drupal-scaffold": {
+            "locations": {
+                "web-root": "web/"
+            }
+        },
+        "enable-patching": true,
+        "installer-paths": {
+            "web/core": [
+                "type:drupal-core"
+            ],
+            "web/libraries/{$name}": [
+                "type:drupal-library"
+            ],
+            "web/modules/contrib/{$name}": [
+                "type:drupal-module"
+            ],
+            "web/profiles/contrib/{$name}": [
+                "type:drupal-profile"
+            ],
+            "web/themes/contrib/{$name}": [
+                "type:drupal-theme"
+            ],
+            "drush/contrib/{$name}": [
+                "type:drupal-drush"
+            ]
+        }
+    },
+    "autoload": {
+        "classmap": [
+            "scripts/composer/ScriptHandler.php"
+        ]
+    },
     "repositories": {
         "packagist.drupal": {
             "type": "composer",
@@ -44,66 +90,20 @@
             }
         }
     },
-    "require": {
-        "composer/installers": "^1.2",
-        "cweagans/composer-patches": "~1.0",
-        "drupal/core": "^8.0",
-        "drupal/core-composer-scaffold": "^8.8",
-        "drush/drush": "^9.0",
-        "oomphinc/composer-installers-extender": "^2.0",
-        "sparksinteractive/sector-distribution": "5.0.x-dev"
-    },
-    "config": {
-        "bin-dir": "bin/",
-        "sort-packages": true
-    },
     "minimum-stability": "dev",
     "prefer-stable": true,
-    "autoload": {
-        "classmap": [
-            "scripts/composer/ScriptHandler.php"
-        ]
-    },
     "scripts": {
         "pre-install-cmd": [
-            "Sector\\composer\\ScriptHandler::checkComposerVersion"
-        ],
-        "pre-update-cmd": [
             "Sector\\composer\\ScriptHandler::checkComposerVersion"
         ],
         "post-install-cmd": [
             "Sector\\composer\\ScriptHandler::createRequiredFiles"
         ],
+        "pre-update-cmd": [
+            "Sector\\composer\\ScriptHandler::checkComposerVersion"
+        ],
         "post-update-cmd": [
             "Sector\\composer\\ScriptHandler::createRequiredFiles"
         ]
-    },
-    "extra": {
-        "drupal-scaffold": {
-            "locations": {
-                "web-root": "web/"
-            }
-        },
-        "installer-paths": {
-            "web/core": [
-                "type:drupal-core"
-            ],
-            "web/libraries/{$name}": [
-                "type:drupal-library"
-            ],
-            "web/modules/contrib/{$name}": [
-                "type:drupal-module"
-            ],
-            "web/profiles/contrib/{$name}": [
-                "type:drupal-profile"
-            ],
-            "web/themes/contrib/{$name}": [
-                "type:drupal-theme"
-            ],
-            "drush/contrib/{$name}": [
-                "type:drupal-drush"
-            ]
-        },
-        "enable-patching" : true
     }
 }
