@@ -33,3 +33,5 @@ web/sites/simpletest
 
 # Ignore Acquia Dev Desktop configs.
 web/sites/*.dd
+/.editorconfig
+/.gitattributes
