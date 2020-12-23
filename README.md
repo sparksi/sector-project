@@ -1,6 +1,6 @@
 # Sector's Composer Project Template
 
-[Sector](https://www.sector.org.nz/) is a Drupal 8 distribution (or install profile) built and maintained by [Sparks Interactive](https://www.sparksinteractive.co.nz).
+[Sector](https://www.sector.org.nz/) is a Drupal 9 distribution (or install profile) built and maintained by [Sparks Interactive](https://www.sparksinteractive.co.nz).
 
 ## Installation
 
@@ -10,7 +10,7 @@ Complete installation instructions are available at the main Sector repository: 
 
 ### Quick Start
 
-Composer will create a new directory called `{project-name}` containing a `web` directory with a complete Drupal 8 codebase and the Sector install profile.
+Composer will create a new directory called `{project-name}` containing a `web` directory with a complete Drupal 9 codebase and the Sector install profile.
 
     composer create-project sparksinteractive/sector-project {project-name}
 
