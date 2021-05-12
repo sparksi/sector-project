@@ -21,8 +21,7 @@ When installing the given `composer.json` some tasks are taken care of:
 * Drupal core will be installed in the `web/core` directory.
 * Modules (packages of type `drupal-module`), themes (packages of type `drupal-theme`), and profiles (packages of type `drupal-profile`) are automatically installed to their respective `web/(modules|themes|profiles)/contrib` directories.
 * Downloads Drupal scaffold files such as `index.php` and `.htaccess` in the `web` directory.
-* The latest version of Drush is installed locally for use at `bin/drush`.
-* The latest version of Drupal Console is installed locally for use at `bin/drupal`.
+* The latest version of Drush is installed locally for use at `./vendor/bin/drush`.
 
 For a better idea as to what Sector does, what features it has, and why you should use it, visit the [main repository](https://github.com/sparksi/sector-distribution).
 
