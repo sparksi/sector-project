@@ -20,7 +20,6 @@
         "sparksinteractive/sector-distribution": "^9.1"
     },
     "config": {
-        "bin-dir": "bin/",
         "sort-packages": true
     },
     "extra": {
