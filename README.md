@@ -28,3 +28,27 @@ For a better idea as to what Sector does, what features it has, and why you shou
 ## Need Help or Found a Bug?
 
 If you have any queries or issues about how to use Sector, and you've already read through the [Sector Distribution README](https://github.com/sparksi/sector-distribution/blob/master/README.md), then open an issue here or on our [drupal.org project page](https://www.drupal.org/project/sector).
+
+## Contributing to this repository
+
+This repository is a component used with `composer create-project` to build a Sector site. Propose changes via the [issue queue on Drupal.org](https://www.drupal.org/project/issues/sector).
+
+To test building a Sector site via `composer create-project` using your modified version of this repository, follow these steps:
+
+* Clone this repository locally and make your proposed modifications.
+* Create a `repo.json` with the following content, replacing the curly braced values with appropriate ones:
+  ```json
+  {
+    "package": {
+      "name": "sparksinteractive/sector-project",
+      "version": "{version}",
+      "source": {
+        "url": "/{path-to}/sector-project/.git",
+        "type": "git",
+        "reference": "{your-branch}"
+      }
+    }
+  }
+  ```
+* Use `composer create-project sparksinteractive/sector-project --repository-url <path-to>/repo.json <destination>` to build your project.
+* When ready, use the Drupal.org issue queue to collaborate on the proposal with a pull request to [sparksi/sector-project](https://github.com/sparksi/sector-project) on Github for the changes themselves.
