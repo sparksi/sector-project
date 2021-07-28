@@ -38,11 +38,6 @@
             "drush/Commands/contrib/{$name}": ["type:drupal-drush"]
         }
     },
-    "autoload": {
-        "classmap": [
-            "scripts/composer/ScriptHandler.php"
-        ]
-    },
     "repositories": {
         "packagist.drupal": {
             "type": "composer",
@@ -90,19 +85,5 @@
         }
     },
     "minimum-stability": "dev",
-    "prefer-stable": true,
-    "scripts": {
-        "pre-install-cmd": [
-            "Sector\\composer\\ScriptHandler::checkComposerVersion"
-        ],
-        "post-install-cmd": [
-            "Sector\\composer\\ScriptHandler::createRequiredFiles"
-        ],
-        "pre-update-cmd": [
-            "Sector\\composer\\ScriptHandler::checkComposerVersion"
-        ],
-        "post-update-cmd": [
-            "Sector\\composer\\ScriptHandler::createRequiredFiles"
-        ]
-    }
+    "prefer-stable": true
 }
