@@ -59,6 +59,19 @@
                 }
             }
         },
+        "ckeditor/templates": {
+            "type": "package",
+            "package": {
+                "name": "ckeditor/templates",
+                "type": "drupal-library",
+                "version": "4.11.1",
+                "dist": {
+                    "type": "zip",
+                    "url": "https://download.ckeditor.com/templates/releases/templates_4.11.1.zip",
+                    "reference": "master"
+                }
+            }
+        },
         "ckeditor-plugin/link": {
             "type": "package",
             "package": {
