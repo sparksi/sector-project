@@ -51,10 +51,10 @@
             "type": "package",
             "package": {
                 "name": "ckeditor-plugin/templates",
-                "version": "4.14.0",
+                "version": "4.16.0",
                 "type": "drupal-library",
                 "dist": {
-                    "url": "https://download.ckeditor.com/templates/releases/templates_4.14.0.zip",
+                    "url": "https://download.ckeditor.com/templates/releases/templates_4.16.0.zip",
                     "type": "zip"
                 }
             }
@@ -63,10 +63,10 @@
             "type": "package",
             "package": {
                 "name": "ckeditor-plugin/link",
-                "version": "4.14.0",
+                "version": "4.16.0",
                 "type": "drupal-library",
                 "dist": {
-                    "url": "https://download.ckeditor.com/link/releases/link_4.14.0.zip",
+                    "url": "https://download.ckeditor.com/link/releases/link_4.16.0.zip",
                     "type": "zip"
                 }
             }
@@ -75,10 +75,10 @@
             "type": "package",
             "package": {
                 "name": "ckeditor-plugin/fakeobjects",
-                "version": "4.14.0",
+                "version": "4.16.2",
                 "type": "drupal-library",
                 "dist": {
-                    "url": "https://download.ckeditor.com/fakeobjects/releases/fakeobjects_4.14.0.zip",
+                    "url": "https://download.ckeditor.com/fakeobjects/releases/fakeobjects_4.16.2.zip",
                     "type": "zip"
                 }
             }
