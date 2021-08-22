@@ -27,3 +27,25 @@ For a better idea as to what Sector does, what features it has, and why you shou
 ## Need Help or Found a Bug?
 
 If you have any queries or issues about how to use Sector, and you've already read through the [Sector Distribution README](https://github.com/sparksi/sector-distribution/blob/master/README.md), then open an issue here or on our [drupal.org project page](https://www.drupal.org/project/sector).
+
+## Contributing to this repository
+
+This repository is a component used with `composer create-project` to build a Sector site. Propose changes via the [issue queue on Drupal.org](https://www.drupal.org/project/issues/sector).
+
+To test building a Sector site via `composer create-project` using your modified version of this repository, follow these steps:
+
+1. Clone this repository locally and make your proposed modifications.
+2. Use the following command to create a project based on your modified version:
+  ```
+  composer create-project \
+    --prefer-dist \
+    --repository='{"type":"path", "url":"/src/sector-project","options":{"symlink":false, "versions":{"sparksinteractive/sector-project":"9.1.4"}}}' \
+    sparksinteractive/sector-project \
+    /src/target-dir
+  ```
+  Replace the following values in this command:
+  * `/src/sector-project`: The path to your local clone of this repository.
+  * `9.1.4`: A patch increment above current sparksinteractive/sector-project release.
+  * `/src/target-dir`: The directory to create your test build of this project.
+
+When ready, use the Drupal.org issue queue to collaborate on the proposal with a pull request to [sparksi/sector-project](https://github.com/sparksi/sector-project) on Github for the changes themselves.
