@@ -13,14 +13,14 @@
     "require": {
         "composer/installers": "^1.2",
         "cweagans/composer-patches": "~1.0",
-        "drupal/core-composer-scaffold": "^9.1",
-        "drupal/core-recommended": "^9.1",
+        "drupal/core-composer-scaffold": "^9.2",
+        "drupal/core-recommended": "^9.2",
         "drush/drush": "^10.0",
         "oomphinc/composer-installers-extender": "^2.0",
-        "sparksinteractive/sector-distribution": "~9.1.0"
+        "sparksinteractive/sector-distribution": "~9.2.0"
     },
     "require-dev": {
-        "drupal/core-dev": "^9.1"
+        "drupal/core-dev": "^9.2"
     },
     "config": {
         "sort-packages": true
