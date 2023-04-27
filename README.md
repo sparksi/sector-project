@@ -1,6 +1,6 @@
 # Sector's Composer Project Template
 
-[Sector](https://www.sector.org.nz/) is a Drupal 9 distribution (or install profile) built and maintained by [Sparks Interactive](https://www.sparksinteractive.co.nz).
+[Sector](https://www.sector.org.nz/) is a Drupal 10 distribution (or install profile) built and maintained by [Sparks Interactive](https://www.sparksinteractive.co.nz).
 
 ## Installation
 
@@ -39,13 +39,13 @@ To test building a Sector site via `composer create-project` using your modified
   ```
   composer create-project \
     --prefer-dist \
-    --repository='{"type":"path", "url":"/src/sector-project","options":{"symlink":false, "versions":{"sparksinteractive/sector-project":"9.x.x"}}}' \
+    --repository='{"type":"path", "url":"/src/sector-project","options":{"symlink":false, "versions":{"sparksinteractive/sector-project":"10.x.x"}}}' \
     sparksinteractive/sector-project \
     /src/target-dir
   ```
   Replace the following values in this command:
   * `/src/sector-project`: The path to your local clone of this repository.
-  * `9.x.x`: A patch increment above current sparksinteractive/sector-project release.
+  * `10.x.x`: A patch increment above current sparksinteractive/sector-project release.
   * `/src/target-dir`: The directory to create your test build of this project.
 
 When ready, use the Drupal.org issue queue to collaborate on the proposal with a pull request to [sparksi/sector-project](https://github.com/sparksi/sector-project) on Github for the changes themselves.
