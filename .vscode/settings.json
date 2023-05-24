@@ -35,5 +35,8 @@
   "emptyIndent.highlightIndent": false,
   "emptyIndent.highlightColor": "rgba(246,36,89,0.6)",
   "phpcs.standard": "Drupal,DrupalPractice",
-  "scss.validate": false
+  "scss.validate": false,
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
 }
