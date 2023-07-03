@@ -6,7 +6,7 @@
   "editor.autoIndent": "full",
   "editor.insertSpaces": true,
   "editor.formatOnPaste": true,
-  "editor.formatOnSave": false,
+  "editor.formatOnSave": true,
   "editor.renderWhitespace": "boundary",
   "editor.wordWrapColumn": 80,
   "editor.wordWrap": "off",

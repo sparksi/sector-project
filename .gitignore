@@ -31,7 +31,7 @@ web/sites/*/private
 # Ignore SimpleTest multi-site environment.
 web/sites/simpletest
 
-# Ignore Acquia Dev Desktop configs.
+# Ignore Acquia Dev Desktop configs / DDEV.
 web/sites/*.dd
-/.editorconfig
 /.gitattributes
+.ddev
