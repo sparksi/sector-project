@@ -1,4 +1,6 @@
-# Sector's Composer Project Template
+# DEPRECATED Sector's Composer Project Template
+
+**Visit: [Sector Project Template on Drupal.org](https://www.drupal.org/project/sector_project_template) for the actively maintained version of this project.**
 
 [Sector](https://www.sector.org.nz/) is a Drupal 9 distribution (or install profile) built and maintained by [Sparks Interactive](https://www.sparksinteractive.co.nz).
 
@@ -12,7 +14,7 @@ Complete installation instructions are available at the main Sector repository: 
 
 Composer will create a new directory called `{project-name}` containing a `web` directory with a complete Drupal 9 codebase and the Sector install profile.
 
-    composer create-project sparksinteractive/sector-project {project-name}
+    composer create-project drupal/sector_project_template {project-name}
 
 ## What Does This Template Do?
 
